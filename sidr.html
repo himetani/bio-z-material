@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample1</title>
+
+    <!-- 黒ベースのスタイル -->
+    <link rel="stylesheet" type="text/css" href="jquery.sidr.dark.css">
+  </head>
+
+  <body>
+    <!-- メニュー部 //body内のどこでもok-->
+    <div id="navigation">
+      <h3>スライドインメニュー</h3>
+      <ul>
+	<li><a href="#link1">Menu 1</a></li>
+	<li><a href="#link2">Menu 2</a></li>
+	<li><a href="#link3">Menu 3</a></li>
+	<li><a href="#link4">Menu 4</a></li>
+	<li><a href="#link5">Menu 5</a></li>
+      </ul>
+    </div>
+
+    <!-- コンテンツ部 -->
+    <h3>サンプル1</h3>
+    <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+
+    <a id="triggerLink">メニュー</a>
+
+    <!-- jQuery & plugin //ページ下部(bodyの最後)で読み込む方が良い-->
+    <script type="text/javascript" charset="UTF-8" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="jquery.sidr.min.js"></script>
+    <script type="text/javascript" charset="UTF-8">
+      $(document).ready(function() {
+      $('#triggerLink').sidr({
+      source: '#navigation'
+      });
+      });
+    </script>
+  </body>
+  </html>
