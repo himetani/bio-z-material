@@ -2,9 +2,8 @@
 <html lang="ja-JP">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Bio-z sample</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="sidr-package-1.2.1/stylesheets/jquery.sidr.dark.css">
@@ -13,20 +12,28 @@
       .navbar{
       float: right !important;
       }
-      .container{
+<!--      .container{
       float: right !important;
-      }
+      }-->
       .btn.btn-navbar{
       float: right !important;
       }
-    </style>
+
+html {
+      background: url("paper.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+     </style>
   </head>
 
   <body>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
       <!--<div class="navbar-inner">3から必要なくなった-->
-      <div class="container">
 	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 	 <span class="glyphicon glyphicon-align-justify" aria-hidden="true"</span>
 	    <span class=""></span>
@@ -52,111 +59,160 @@
 		</ul>
 	      </li>
 	    </ul>
-	  </div><!--/.nav-collapse -->
-	</div>
-      <!--</div>-->
+	  </div><!--/.nav-collapse-->
+</div>
+</div>
+<!-- Main hero unit for a primary marketing message or call to action -->
+<!--<div class="hero-unit">bootstrap3からjumbotronへ変更-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4"></div>
+    <div class="jumbotron" class="col-md-4">
+      <h1 id="1">Webアプリの課題サンプル</h1>
     </div>
-
-    <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <br><br><br><br>
-      <!--<div class="hero-unit">bootstrap3からjumbotronへ変更-->
-      <div class="jumbotron">
-	<h1 id="1">Webアプリの課題</h1>
-      </div>
-
-      <div class="row">
-	<div class="col-md-4">
-	  <button type="button" id="action">消える</button>
-	</div>
-	<div class="col-md-4">
-	  <button type="button" id="action2">動く</button>
+    <div class="col-md-4 col-md-offset-4"></div>
+  </div>
+	<div class="row">
+	  <div class="col-md-4">
+	    <button type="button" class="btn btn-primary btn-lg" id="action">消える</button>
+	  </div>
+	  <div class="col-md-4">
+	    <!-- Button trigger modal -->
+	    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	      Programing languages
+	    </button>
+	    
+	    <!-- Modal -->
+	    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	      <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		    <h4 class="modal-title" id="myModalLabel">Programing languages</h4>
+		  </div>
+		  <div class="modal-body">
+		    <table class="table table-striped">
+		      <tr>
+			<th>Programing language</th><th>yes or no</th></tr>
+		      <tr>
+			<td>c</td><td>yes</td>
+		      </tr><tr>
+			<td>c++</td><td>no</td>
+		      </tr><tr>
+			<td>c#</td><td>no</td>
+		      </tr><tr>
+			<td>java</td><td>yes</td>
+		      </tr><tr>
+			<td>javascript</td><td>no</td>
+		      </tr><tr>
+			<td>Python</td><td>yes</td>
+		      </tr><tr>
+			<td>Ruby</td><td>yes</td>
+		      </tr><tr>
+			<td>R</td><td>no</td>
+		      </tr><tr>
+			<td>octave</td><td>yes</td>
+		      </tr><tr>
+			<td>Objective-c</td><td>no</td>
+		      </tr><tr>
+			<td>Swift</td><td>yes</td>
+		      </tr>
+		    </table>
+		  </div>
+		  <div class="modal-footer">
+		    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		    <!-- <button type="button" class="btn btn-primary">Save changes</button>-->
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </div>	
+	  <div class="col-md-4">
+	  <button type="button" class="btn btn-primary btn-lg"id="action2">  ?  </button>
+	  
+	  </div>
 	</div>	
-	<div class="col-md-4">
-	  <button type="button" id="action2">?</button>
+	
+	<!-- Example row of columns -->
+	<div class="row">
+	  <div class="col-md-4">
+	    <h2>Name</h2>
+	    <p>Taro kyukodai</p>
+	    <p><a id="2">View details &raquo;</a></p>
+	  </div>
+	  <div class="col-md-4">
+	    <h2>Grade</h2>
+	    <p> 4 </p>
+	  <p><a id="3">View details &raquo;</a></p>
+	  </div>
+	  <div class="col-md-4">
+	    <h2>Introduce</h2>
+	    <p>課題製作者です。</p>
+	    <p><a id="4">View details &raquo;</a></p>
+	  </div>
 	</div>
 	
-      <!-- Example row of columns -->
-      <div class="row">
-	<div class="col-md-4">
-	  <h2>Name</h2>
-	  <p>Kisuke Tanaka</p>
-	  <p><a id="2">View details &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-	  <h2>Grade</h2>
-	  <p> 4 </p>
-	  <p><a id="3">View details &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-	  <h2>Introduce</h2>
-	  <p>課題製作者です。</p>
-	  <p><a id="4">View details &raquo;</a></p>
-	</div>
-      </div>
-      <div class="row">
-	<div class="col-md-4">
-	  <h2><p style="display: none" id="details1">田中規介<p></h2>
-	</div>
-	<div class="col-md-4">
-	  <h2><p style="display: none" id="details2">生命情報工学科４年<p></h2>
-	</div>
-	<div class="col-md-4">
-	  <h2><p style="display: none" id="details3">ちょっと頑張りました。<p></h2></h2>
-	</div>
-      </div>
-
-      <hr>
-
-      <footer>
-	<p>&copy; Company 2013</p>
-      </footer>
-    </div><!--/ Contents Wrap -->
-    <!-- JavaScript -->
-    <script type="text/javascript" charset="UTF-8" src="jquery/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="sidr-package-1.2.1/jquery.sidr.min.js"></script>
-    <script type="text/javascript" charset="UTF-8">
-      $(document).ready(function() {
-      $('.navbar .container .btn.btn-navbar')
-      .attr('data-toggle', '')
-      .attr('data-target', '')
-      .sidr({
-      source: '.navbar .container .nav-collapse.collapse'
-      });
-      });
-
-      $("#2").hover(
-      function() {
-      $("#details1").show()
-      },
-      function() {
-      $("#details1").hide()
-      })
-       $("#3").hover(
-      function() {
-      $("#details2").show()
-      },
-      function() {
-      $("#details2").hide()
-      })
-       $("#4").hover(
-      function() {
-      $("#details3").show()
-      },
-      function() {
-      $("#details3").hide()
-      })
-      
-     $(function () {
-     $("#action").click(function(){
-      $("#1").toggle();
-     });
-     });
-
-    </script>
-
-  </body>
+	<div class="row">
+	  <div class="col-md-4">
+	    <h2><p style="display: none" id="details1">九工大太郎<p></h2>
+	  </div>
+	  <div class="col-md-4">
+	    <h2><p style="display: none" id="details2">生命情報工学科４年<p></h2>
+	  </div>
+	  <div class="col-md-4">
+	    <h2><p style="display: none" id="details3">ちょっと頑張りました。<p></h2>
+	  </div>
+        </div>
+	<ul id="feed"></ul>
+	<footer>
+	  <p>&copy; bio-z  2015</p>
+	</footer>
+	<!--/ Contents Wrap -->
+	<!-- JavaScript -->
+	<script type="text/javascript" charset="UTF-8" src="jquery/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="sidr-package-1.2.1/jquery.sidr.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="RSS.js"></script>
+	<script type="text/javascript" charset="UTF-8">
+	  $(document).ready(function() {
+	  $('.navbar .container .btn.btn-navbar')
+	  .attr('data-toggle', '')
+	  .attr('data-target', '')
+	  .sidr({
+	  source: '.navbar .container .nav-collapse.collapse'
+	  });
+	  });
+	  
+	  $("#2").hover(
+	  function() {
+	  $("#details1").show()
+	  },
+	  function() {
+	  $("#details1").hide()
+	  })
+	  $("#3").hover(
+	  function() {
+	  $("#details2").show()
+	  },
+	  function() {
+	  $("#details2").hide()
+	  })
+	  $("#4").hover(
+	  function() {
+	  $("#details3").show()
+	  },
+	  function() {
+	  $("#details3").hide()
+	  })
+	  
+	  $(function () {
+	  $("#action").click(function(){
+	  $("#1").toggle();
+	  });
+	  });
+	  
+	</script>
+</body>
 </html>
 
