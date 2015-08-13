@@ -9,39 +9,33 @@
     <link rel="stylesheet" type="text/css" href="sidr-package-1.2.1/stylesheets/jquery.sidr.dark.css">
 <!--ここが効いていない可能性-->
      <style type="text/css">
-      .navbar{
-      float: right !important;
-      }
-<!--      .container{
-      float: right !important;
-      }-->
-      .btn.btn-navbar{
-      float: right !important;
-      }
 
-html {
-      background: url("paper.jpg") no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      }
+       .navbar .container .btn.btn-navbar {
+       float: left !important;
+       }
+
+       html {
+       background: url("paper.jpg") no-repeat center center fixed;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+       }
      </style>
   </head>
 
   <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <!--<div class="navbar-inner">3から必要なくなった-->
-	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
 	 <span class="glyphicon glyphicon-align-justify" aria-hidden="true"</span>
 	    <span class=""></span>
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	  </button>
 	  <!--<a class="brand">Project</a>-->
-	  <div class="nav-collapse collapse">
+	  <div class="navber-collapse collapse">
 	    <ul class="nav">
 	      <li class="active"><a>Home</a></li>
 	      <li><a href="#about">About</a></li>
@@ -64,7 +58,7 @@ html {
 </div>
 <!-- Main hero unit for a primary marketing message or call to action -->
 <!--<div class="hero-unit">bootstrap3からjumbotronへ変更-->
-<div class="container">
+<div class="container" style="background-color:rgba(150,150,150,0.7)">
   <div class="row">
     <div class="col-md-4 col-md-offset-4"></div>
     <div class="jumbotron" class="col-md-4">
@@ -143,6 +137,26 @@ html {
 	  <div class="col-md-4">
 	    <h2>Grade</h2>
 	    <p> 4 </p>
+	    <p><a id="3">View details &raquo;</a></p>
+	  </div>
+	  <div class="col-md-4">
+	    <h2>Introduce</h2>
+	    <p>課題製作者です。</p>
+	    <p><a id="4">View details &raquo;</a></p>
+	  </div>
+	</div>
+
+        <div class="row">
+	  <div class="col-md-4">
+	    <h2><p style="display: none" id="details1">九工大太郎<p></h2>
+	  </div>
+	  <div class="col-md-4">
+	    <h2><p style="display: none" id="details2">生命情報工学科４年<p></h2>
+	  </div>
+	  <div class="col-md-4">
+	    <h2><p style="display: none" id="details3">ちょっと頑張りました。<p></h2>
+	  </div>
+	          </div><p> 4 </p>
 	  <p><a id="3">View details &raquo;</a></p>
 	  </div>
 	  <div class="col-md-4">
