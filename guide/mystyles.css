@@ -1,0 +1,9 @@
+body { padding-top: 100px; margin-bottom:50px;@}
+footer { margin-top: 100px; }
+img {margin-top: 20px; }
+h1 > span {
+  position: relative;
+  top: -65px;
+  display: block;
+}
+a:hover { text-decoration:none; }
