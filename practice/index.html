@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- ブラウザのタブに表示されるタイトル -->
+        <title>練習ページ</title>
+
+        <!-- 文字コードの指定 -->
+        <meta charset="utf-8">
+
+        <!-- BootstrapのソースをWebから取得 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    </head>
+
+    <body>
+        <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="./js/alert.js"></script>
+        <script src="./js/index.js"></script>
+        <!-- <script src="./js/answer.js"></script> -->
+
+        <div class="container">
+            <h1>練習ページ</h1>
+            <h5>問1、問２を解くと、「ありがたいお言葉」と「リファレンス一覧」を見ることができるようになります。</h5>
+
+            <hr>
+
+            <div class="row">
+                <h3>問1</h3>
+                <p>jQueryをインポートしてください。</p>
+                <p>インポートに成功すると、コンソールのエラーが消えアラートが表示されます。</p>
+                <hr>
+            </div>
+
+            <div class="row">
+                <h3>問2</h3>
+                <p>Alertを消してください。</p>
+                <hr>
+            </div>
+
+            <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#start" aria-expanded="false" aria-controls="start">
+                ありがたいお言葉
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target=".reference-modal-lg">リファレンス一覧</button>
+
+            <div class="modal fade reference-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">リファレンス一覧</h4>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>
+                                    <p>Web全般</p>
+                                    <p>HTMLタグなどを中心に、Web系の技術全般のマニュアル</p>
+                                    <a href="http://devdocs.io" target="_blank">http://devdocs.io</a>
+                                </li>
+                                <li>
+                                    <p>Bootstrapの公式ドキュメント</p>
+                                    <a href="http://getbootstrap.com" target="_blank">http://getbootstrap.com</a>
+                                </li>
+                                <li>
+                                    <p>jQueryの公式ドキュメント</p>
+                                    <a href="https://jquery.com" target="_blank">https://jquery.com</a>
+                                </li>
+                                <li>
+                                    <p>jQueryの日本語ドキュメント</p>
+                                    <p>情報が間違っていたり、最新の情報でない場合があるので注意</p>
+                                    <a href="https://jquery.com" target="_blank">https://jquery.com</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" id="start">
+                <div class="well">
+                    後で書く。それぞれの問題にヒントを付け加える予定。
+                </div>
+            </div>
+
+            <hr>
+            
+            <div class="row">
+                <h3>問3</h3>
+                <p>下の枠内にマウスがあるとき、文字の色が変わるようにしてください。
+                <div id="colorZone" class="well">
+                    <p id="colorStr">この枠の文字を変える。</p>
+                </div>
+                <hr>
+            </div>
+
+            <div class="row">
+                <h3>問4</h3>
+                <p>ボタンをクリックすると、安永卓生→西郷浩人→山崎敏正と順に変わる様にしてください。
+                <div class="well">
+                    <p id="prof">安永卓生</p>
+                </div>
+                <button type="button" id="chBtn" class="btn btn-default">先生をチェンジ！</button>
+                <hr>
+            </div>
+
+            <div class="row">
+                <h3>問5</h3>
+                <p>簡易todoリストを実装してください。</p>
+                <p>機能のリスト</p>
+                <ul>
+                    <li>todoリストへの追加</li>
+                    <li>doneしたのち、実行済みリストに追加</li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">todoリスト</h2>
+                        </div>
+                        <div class="panel-body">
+                            <table id="todoTable" class="table table-bordered">
+                                <tr>
+                                    <th>Content</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>仕事1</td>
+                                    <td>
+                                        <button class="btn btn-default doneBtn">done</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>仕事2</td>
+                                    <td>
+                                        <button class="btn btn-default doneBtn">done</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>仕事3</td>
+                                    <td>
+                                        <button class="btn btn-default doneBtn">done</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> <!-- panel-body -->
+                    </div> <!-- panel -->
+
+                    <input type="text" id="content" />
+                    <button type="button" id="addBtn" class="btn btn-default">Add</button>
+                </div>
+
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                </div>
+
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">実行済みリスト</h2>
+                        </div>
+                        <div class="panel-body">
+                            <table id="doneTable" class="table table-bordered">
+                                <tr>
+                                    <th>Content</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>削除済みアイテム1</td>
+                                    <td>
+                                        <button class="btn btn-default restoreBtn">元に戻す</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> <!-- panel-body -->
+                    </div> <!-- panel -->
+
+                </div> <!-- div row -->
+            </div>
+            <hr>
+        </div> <!-- div container -->
+    </body>
+</html>
+
