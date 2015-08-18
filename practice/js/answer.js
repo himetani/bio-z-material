@@ -2,16 +2,26 @@
 $(function() {
     $('div#colorZone').hover(toRed, toBlack)
 })
+
+function toBlack() {
+    $("#colorStr").css('color', 'black')
+}
+
+function toRed() {
+    $("#colorStr").css('color', 'red')
+}
+
 // 問4の答え
 $(document).on('click', 'button#chBtn', function() {
     var $curProf = $('p#prof')
-    var name = $curProf[0].innerText
+    var name = $curProf[0].innerHTML
+    console.log(name)
     if(name === '安永卓生') {
-        $curProf[0].innerText = '西郷浩人'
+        $curProf[0].innerHTML = '西郷浩人'
     } else if (name === '西郷浩人'){
-        $curProf[0].innerText = '山崎敏正'
+        $curProf[0].innerHTML = '山崎敏正'
     } else if (name === '山崎敏正') {
-        $curProf[0].innerText = '安永卓生'
+        $curProf[0].innerHTML = '安永卓生'
     }
 })
 
@@ -37,7 +47,7 @@ $(document).on('click', 'tr button.doneBtn', function(event) {
 })
 
 // 元に戻す要素の削除とtodoテーブルへの追加
-$(document).on('click', 'tr button.restoreBtn', function(event) {
+$(document).on('click', 'tr button.restoreBtn', function() {
     var $tr = $(this).parent().parent()
     var content = $tr.children().first()[0].innerHTML
 
