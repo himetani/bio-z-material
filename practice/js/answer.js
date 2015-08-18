@@ -47,7 +47,7 @@ $(document).on('click', 'tr button.doneBtn', function(event) {
 })
 
 // 元に戻す要素の削除とtodoテーブルへの追加
-$(document).on('click', 'tr button.restoreBtn', function(event) {
+$(document).on('click', 'tr button.restoreBtn', function() {
     var $tr = $(this).parent().parent()
     var content = $tr.children().first()[0].innerHTML
 
