@@ -1,98 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>bioZ guide</title>
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="mystyles.css" rel="stylesheet">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</head>
-<body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">bioZ</a>
-			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="guide.html">guide</a></li>
-				</ul>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-	</nav>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>bioZ guide</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">bioZ</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="guide.html">guide</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        </nav>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8" role="main">
-				<div class="bs-docs-section">
-					<h1 class="page-header"><span id="git"></span>gitのインストール</h1>
-					<p class="lead">gitのWindows版をインストールします。</p>
-					<p><a href="https://msysgit.github.io/" target="_blank">git for windows</a>からダウンロードします。</p>
-					<img src="image/download_screen.png" width="40%" height="40%">
-					<p>ダウンロードしてきたインストーラーを起動します。</p>
-					<img src="image/setup1.png" width="40%" height="40%">
-					<p>Nextをクリック</p>
-					<img src="image/setup2.png" width="40%" height="40%">
-					<p>ライセンスを確認してNext</p>
-					<img src="image/setup3.png" width="40%" height="40%">
-					<p>上の画像と同じようにチェックボックスを選択してください。デフォルトではAdditional Iconsが選択されていません。これを選択すると、デスクトップにbash(ターミナル)を起動するためのショートカットができます。</p>
-					<img src="image/setup4.png" width="40%" height="40%">
-					<p>Nextをクリック</p>
-					<img src="image/setup5.png" width="40%" height="40%">
-					<p>Nextをクリック。このあとインストールが開始されます。</p>
-					<img src="image/git_icon.png">
-					<p>インストールが終了すると、このようなGit bashのアイコンがデスクトップに作成されます。</p>
-					<img src="image/bash.png">
-					<p>Git bashではbashのターミナルが使えます。（linuxと同じコマンドが使えます。）このターミナル上でgitが使えるようになります。</p>
-					
-				</div>
-				<div class="bs-docs-section">
-					<h1 id="eclipse" class="page-header"><span id="eclipse"></span>Eclipseのインストール</h1>
-				</div>
-				<div class="bs-docs-section">
-					<h1 class="page-header"><span id="chrome"></span>Google Chromeのインストール</h1>
-					<p class="lead">Google ChromeがPCに入ってない方はインストールしてください。</p>
-					<p><a href="https://www.google.co.jp/chrome/browser/desktop/" target="_blank">Google Chrome</a>からダウンロードします</p>
-				</div>
-				<div class="bs-docs-section">
-					<h1 class="page-header"><span id="github"></span>GitHubのアカウントをつくる</h1>
-					<p class="lead">GitHubに登録し、ソースコードをみんなに公開できるようにします。</p>
-					<p><a href="https://github.com/" target="_blank">GitHub</a>のページに飛んでください。</p>
-					<img src="image/github.png" width="40%" height="40%">
-					<p>ユーザーネーム、メールアドレス、パスワードを入力し、「sign up for GitHub」をクリックして登録してください。</p>
-				</div>
-			</div>
-			<div class="col-md-4" role="complementary">
-			<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
-				<table class="table table-hover">
-					<thead>
-						<tr>
-							<th>準備</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="#git">① gitのインストール</a></td>
-						</tr>
-						<tr>
-							<td><a href="#eclipse">② Eclipseのインストール</a></td>
-						</tr>
-						<tr>
-							<td><a href="#chrome">③ Google Chromeのインストール</a></td>
-						</tr>
-						<tr>
-							<td><a href="#github">④ GitHubのアカウントをつくる</a></td>
-						</tr>
-					</tbody>
-				</table>
-				</nav>
-			</div>
-		</div>
-	</div>
-</body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" role="main">
+                    <div class="section">
+                        <h1 class="section-title">###準備</h1>
+                        <div class="bs-docs-section">
+                            <h1 class="page-header"><span id="git"></span>gitのインストール</h1>
+                            <p class="lead">gitのWindows版をインストールします。</p>
+                            <p><a href="https://msysgit.github.io/" target="_blank">git for windows</a>からダウンロードします。</p>
+                            <img src="image/download_screen.png" width="40%" height="40%">
+                            <p>ダウンロードしてきたインストーラーを起動します。</p>
+                            <img src="image/setup1.png" width="40%" height="40%">
+                            <p>Nextをクリック</p>
+                            <img src="image/setup2.png" width="40%" height="40%">
+                            <p>ライセンスを確認してNext</p>
+                            <img src="image/setup3.png" width="40%" height="40%">
+                            <p>上の画像と同じようにチェックボックスを選択してください。デフォルトではAdditional Iconsが選択されていません。これを選択すると、デスクトップにbash(ターミナル)を起動するためのショートカットができます。</p>
+                            <img src="image/setup4.png" width="40%" height="40%">
+                            <p>Nextをクリック</p>
+                            <img src="image/setup5.png" width="40%" height="40%">
+                            <p>Nextをクリック。このあとインストールが開始されます。</p>
+                            <img src="image/git_icon.png">
+                            <p>インストールが終了すると、このようなGit bashのアイコンがデスクトップに作成されます。</p>
+                            <img src="image/bash.png">
+                            <p>Git bashではbashのターミナルが使えます。（linuxと同じコマンドが使えます。）このターミナル上でgitが使えるようになります。</p>
+
+                        </div>
+                        <div class="bs-docs-section">
+                            <h1 class="page-header"><span id="atom"></span>Atomのインストール</h1>
+                            <p class="lead">ソースコードを編集するためのエディタをインストールします。</p>
+                            <p>今回はAtomを使います。(普段使い慣れているエディタがある方はそちらで大丈夫です）<p>
+                            <p><a href="https://atom.io/" target="_blank">Atom</a>からダウンロード&インストールしてください。</p>
+                        </div>
+                        <div class="bs-docs-section">
+                            <h1 class="page-header"><span id="chrome"></span>Google Chromeのインストール</h1>
+                            <p class="lead">Google ChromeがPCに入ってない方はインストールしてください。</p>
+                            <p><a href="https://www.google.co.jp/chrome/browser/desktop/" target="_blank">Google Chrome</a>からダウンロード&インストールしてください。</p>
+                        </div>
+                        <div class="bs-docs-section">
+                            <h1 class="page-header"><span id="github"></span>GitHubのアカウントをつくる</h1>
+                            <p class="lead">GitHubに登録し、ソースコードをみんなに公開できるようにします。</p>
+                            <p><a href="https://github.com/" target="_blank">GitHub</a>のページに飛んでください。</p>
+                            <img src="image/github.png" width="40%" height="40%">
+                            <p>ユーザーネーム、メールアドレス、パスワードを入力し、「sign up for GitHub」をクリックして登録してください。</p>
+                        </div>
+                        <div class="bs-docs-section">
+                            <h1 class="page-header"><span id="regist_key"></span>SSHの公開鍵を作成しGitHubに登録する</h1>
+                            <p class="lead">SSHの公開鍵を登録し、GitHubにソースコードをpushできるようにします。</p>
+                            <p>GitHubのレポジトリと自分のローカルマシンのやりとりは、主にSSHを使用します。</p>
+                            <p>（Gitで使われている通信方式：<a href="https://git-scm.com/book/ja/v1/Git-サーバー-プロトコル" target="_blank">Git-サーバー-プロトコル</a>）</p>
+                            <h3 class='semi-title'>手順</h3>
+                            <p>1. 秘密鍵・公開鍵の生成</p>
+                            <p>2. 公開鍵をGitHubに登録</p>
+                            <h3 class='semi-title'>1. 秘密鍵・公開鍵の生成</h3>
+                            <p class='inst'>鍵の有無を確認</p>
+                            <pre>$ ls ~/.ssh</pre>
+                            <p>以下の２つのファイルがあるか確認。もしあれば次の手順を飛ばして「2.公開鍵をGitHubに登録」へ</p>
+                            <p>・id_rsa（秘密鍵）</p>
+                            <p>・id_rsa.pub（公開鍵）<p>
+                            <p class='inst'>秘密鍵・公開鍵のペアを生成</p>
+                            <pre>$ ssh-keygen</pre>
+                            <p>実行すると以下の入力を求められるが、全て空にしたままenterでOK</p>
+                            <p>・鍵の保存先(.ssh/id_rsa)</p>
+                            <p>・パスフレーズ</p>
+                            <p>・パスフレーズ(確認用)</p>
+                            <p class='inst'>作成した公開鍵を確認</p>
+                            <pre>$ cat ~/.ssh/id_rsa.pub</pre>
+                            <h3 class='semi-title'>2. 公開鍵をGitHubに登録</h3>
+                            <img src="image/ssh_settings.png" width="60%" height="60%">
+                            <p>右端のアイコンから「settings」をクリック</p>
+                            <img src="image/ssh_keys.png" width="60%" height="60%">
+                            <p>左のメニューバーから「SSH kyes」をクリック</p>
+                             <img src="image/add_sshkey.png" width="60%" height="60%">
+                             <p>「Add SSH key 」をクリックして、作成した公開鍵を登録する</p>
+                        </div>
+
+                    </div>
+                    <div class="section">
+                        <h1 class="section-title">###説明資料</h1>
+                        <div class="bs-docs-section">
+                            <h1 class="page-header"><span id="git_inst"></span>gitの説明</h1>
+                            <p class="lead">gitとはなにか、gitの使い方の説明です。</p>
+                            <object data="image/git.pdf" width="100%" height="450"></object>
+                        </div> 
+                        <div class="bs-docs-section">
+                            <h1 class="page-header"><span id="web_inst"></span>HTML/CSS,JavaScriptの説明</h1>
+                            <p class="lead">Webページの基本的なページの作成の仕方の説明です。</p>
+                            <object data="image/web.pdf" width="100%" height="450"></object>
+                        </div>
+                        <div class="bs-docs-section">
+                            <h1 class="page-header"><span id="template_819"></span>説明資料&演習課題</h1>
+                            <p class="lead">説明資料&演習課題をGitHubを使って入手します。</p>
+                            <p><a href="https://github.com/bio-z/template_819" target="_brank">bio-z/template_819</a>からgitを使って、クローンする</p>
+                            <pre>$ git clone git@github.com:bio-z/template_819.git</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" role="complementary">
+                    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>準備</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#git"> gitのインストール</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#atom">Atomのインストール</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#chrome"> Google Chromeのインストール</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#github"> GitHubのアカウントをつくる</a></td>
+                            </tr> 
+                            <tr>
+                                <td><a href="#regist_key">SSHの公開鍵を作成しGitHubに登録する</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>説明資料</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#git_inst">gitの説明</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#web_inst">HTML/CSS, JavaScriptの説明</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#template_819">説明資料&演習課題</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
