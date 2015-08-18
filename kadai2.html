@@ -16,8 +16,9 @@
 	<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-    <style type="text/css">
       <!--bodyの背景がflexibleに全画面になるように設定-->
+    <style type="text/css">
+
       body {
       background: url("images/paper.jpg") no-repeat center center fixed;
       -webkit-background-size: cover;
@@ -184,17 +185,28 @@
       <div class="row">
 	<div class="col-md-4">
 	  <h2>Name</h2>
-	  <p>Taro kyukodai</p>
+	  <h4>Taro kyukodai</h4>
 	  <p><a id="2">View details &raquo;</a></p>
 	</div>
+	<!--アイコンのはclassで指定する-->
 	<div class="col-md-4">
           <h2>Grade</h2>
-	  <p> 4 </p>
+	  <h4>B4 
+	  <i class="glyphicon glyphicon-adjust"></i>
+	  <i class="glyphicon glyphicon-align-center"></i>
+	  <i class="glyphicon glyphicon-arrow-up"></i>
+	  <i class="glyphicon glyphicon-asterisk"></i>
+	  <i class="glyphicon glyphicon-backward"></i>
+	  <i class="glyphicon glyphicon-barcode"></i>
+	  <i class="glyphicon glyphicon-briefcase"></i>
+	  <i class="glyphicon glyphicon-circle-arrow-down"></i>
+	  <i class="glyphicon glyphicon-cutlery"></i>
+	  </h4>
 	  <p><a id="3">View details &raquo;</a></p>
 	</div>
 	<div class="col-md-4">
 	  <h2>Introduce</h2>
-	  <p>課題製作者です。</p>
+	  <h4>課題製作者です。</h4>
 	  <p><a id="4">View details &raquo;</a></p>
 	</div>
       </div>
@@ -526,20 +538,22 @@
       source: '.navbar .container .nav-collapse.collapse'
       });
       });
-      <!--各idをふったところがどんな動きをするか-->
-      <!--id=actionの所をclickすると1500msでid=feed,id=1がじわっと出てきたり消えたりする。-->
+
+
+
       $("#action").click(
       function() {
       $("#feed").fadeToggle(1500)
       $("#1").fadeToggle(1500)
       })
-      <!--上に同じ-->
+      
       $("#action2").click(
       function() {
       $("img").fadeToggle(1500)
       })
-      <!--.hoverは.hover(マウスが指定した所に触れている時の動作,マウスが離れている時の動作)を書く
-	function()がいまいちピンとこない人は「無名関数」で検索-->
+
+
+
       $("#2").hover(
       function() {
       $("#details1").show()
@@ -565,6 +579,10 @@
       })
 
     </script>
+    <!--各idをふったところがどんな動きをするか
+     id=actionの所をclickすると1500msでid=feed,id=1がじわっと出てきたり消えたりする。
+     .hoverは.hover(マウスが指定した所に触れている時の動作,マウスが離れている時の動作)を書く
+     function()がいまいちピンとこない人は「無名関数」で検索-->
   </body>
 </html>
 
