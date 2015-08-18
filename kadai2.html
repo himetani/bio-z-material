@@ -17,6 +17,7 @@
 	<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
     <style type="text/css">
+      <!--bodyの背景がflexibleに全画面になるように設定-->
       body {
       background: url("images/paper.jpg") no-repeat center center fixed;
       -webkit-background-size: cover;
@@ -29,6 +30,7 @@
 
   <body background="images/paper.jpg">
     <!-- Fixed navbar -->
+    <!--navbarの説明はプラグイン作った人のサイトを見てね。リンクがページの左上にあります。-->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
 	<div class="navbar-header">
@@ -62,6 +64,7 @@
       </div>
     </div>
 
+    <!--styleでcontainerの背景をグレーにし、かつ透過させている。色のRGBに加え透過度のα がある。-->
     <div class="container theme-showcase" role="main" style="background-color:rgba(150,150,150,0.7)">
     
       <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -69,49 +72,50 @@
 	<h1>Web Application Sample<span class="pull-right hidden-sm">Here ↑</span></h1>
       </div>
 
-      
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-	<div class="item active">
+      <!--ギャラリーのところはBootstrap公式ページのサンプルのコピペです。画像が表示でき無い時altが代わりの文字表記-->
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+	  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+	  <div class="item active">
 	  <img style="display: none" src="images/1_new_york_city.jpg" alt="NEW YORK" width="1200" height="800">
 	  <div class="carousel-caption">
 	 
 	  </div>
-	</div>
-	<div class="item">
-	  <img style="display: none" src="images/New-York-01a.jpg" alt="NEW YORK2" width="1200" height="800">
-	  <div class="carousel-caption">
-	    
+	  </div>
+	  <div class="item">
+	    <img style="display: none" src="images/New-York-01a.jpg" alt="NEW YORK2" width="1200" height="800">
+	    <div class="carousel-caption">
+	      
+	    </div>
+	  </div>
+	  <div class="item">
+	    <img style="display: none" src="images/giphy.gif" alt="NEW YORK3" width="1200" height="800">
+	    <div class="carousel-caption">
+	      
+	    </div>
 	  </div>
 	</div>
-	<div class="item">
-	  <img style="display: none" src="images/giphy.gif" alt="NEW YORK3" width="1200" height="800">
-	  <div class="carousel-caption">
-	    
-	  </div>
-	</div>
+	
+	<!-- Controls -->
+	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	<span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	<span class="sr-only">Next</span>
-      </a>
-	  </div>
 	  
-<br><!--brタグつかちゃいました-->
+      <br><!--brタグつかちゃいました-->
 	  
 	  <div class="row">
 	    <div class="col-md-4">
@@ -123,7 +127,7 @@
 		Programing languages
 	      </button>
 	      
-	      <!-- Modal -->
+	      <!-- Modal もう一つぼわんって画面ででくるやつ。これもBootstrap公式サンプルのコピペ-->
 	      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 		  <div class="modal-content">
@@ -132,6 +136,7 @@
 		      <h4 class="modal-title" id="myModalLabel">Programing languages</h4>
 		    </div>
 		    <div class="modal-body">
+		      <!--tableにclassを指定するといい感じになる-->
 		      <table class="table table-striped">
 			<tr>
 			  <th>Programing language</th><th>yes or no</th></tr>
@@ -193,7 +198,8 @@
 	  <p><a id="4">View details &raquo;</a></p>
 	</div>
       </div>
-      
+
+      <!--style="display: none"で初期状態を指定できる-->
       <div class="row">
 	<div class="col-md-4">
 	  <h2><p style="display: none" id="details1">九工大太郎<p></h2>
@@ -209,6 +215,7 @@
     <div class="page-header">
       <h1 style="display: none" id="1">New York Times</h1>
     </div>
+    <!--feedにはRSS.jsでデータ解析してタグふったやつがくる-->
     <ul style="display: none" id="feed"></ul>
 
     
@@ -519,18 +526,20 @@
       source: '.navbar .container .nav-collapse.collapse'
       });
       });
-
+      <!--各idをふったところがどんな動きをするか-->
+      <!--id=actionの所をclickすると1500msでid=feed,id=1がじわっと出てきたり消えたりする。-->
       $("#action").click(
       function() {
       $("#feed").fadeToggle(1500)
       $("#1").fadeToggle(1500)
       })
-
+      <!--上に同じ-->
       $("#action2").click(
       function() {
       $("img").fadeToggle(1500)
       })
-      
+      <!--.hoverは.hover(マウスが指定した所に触れている時の動作,マウスが離れている時の動作)を書く
+	function()がいまいちピンとこない人は「無名関数」で検索-->
       $("#2").hover(
       function() {
       $("#details1").show()
