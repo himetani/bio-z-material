@@ -93,11 +93,14 @@
                             <p>・パスフレーズ(確認用)</p>
                             <p class='inst'>作成した公開鍵を確認</p>
                             <pre>$ cat ~/.ssh/id_rsa.pub</pre>
+                            <p class='inst'>公開鍵をコピー</p>
+                            <pre>$ clip < ~/.ssh/id_rsa.pub</pre>
+
                             <h3 class='semi-title'>2. 公開鍵をGitHubに登録</h3>
                             <img src="image/ssh_settings.png" width="60%" height="60%">
                             <p>右端のアイコンから「settings」をクリック</p>
                             <img src="image/ssh_keys.png" width="60%" height="60%">
-                            <p>左のメニューバーから「SSH kyes」をクリック</p>
+                            <p>左のメニューバーから「SSH keys」をクリック</p>
                              <img src="image/add_sshkey.png" width="60%" height="60%">
                              <p>「Add SSH key 」をクリックして、作成した公開鍵を登録する</p>
                         </div>
@@ -108,18 +111,23 @@
                         <div class="bs-docs-section">
                             <h1 class="page-header"><span id="git_inst"></span>gitの説明</h1>
                             <p class="lead">gitとはなにか、gitの使い方の説明です。</p>
-                            <object data="image/git.pdf" width="100%" height="450"></object>
+                            <object data="../slide/Git講習.pdf" width="100%" height="450"></object>
                         </div> 
                         <div class="bs-docs-section">
                             <h1 class="page-header"><span id="web_inst"></span>HTML/CSS,JavaScriptの説明</h1>
                             <p class="lead">Webページの基本的なページの作成の仕方の説明です。</p>
-                            <object data="image/web.pdf" width="100%" height="450"></object>
+                            <object data="../slide/HTMLCSS_JS.pdf" width="100%" height="450"></object>
                         </div>
                         <div class="bs-docs-section">
                             <h1 class="page-header"><span id="template_819"></span>説明資料&演習課題</h1>
                             <p class="lead">説明資料&演習課題をGitHubを使って入手します。</p>
                             <p><a href="https://github.com/bio-z/template_819" target="_brank">bio-z/template_819</a>からgitを使って、クローンする</p>
                             <pre>$ git clone git@github.com:bio-z/template_819.git</pre>
+                            <p>以下の資料が入手できます。<p>
+                            <p>・gitの説明資料</p>
+                            <p>・HTML/CSS,Javascriptの資料</p>
+                            <p>・演習課題</p>
+                            <p>・このguideのファイル</p>
                         </div>
                     </div>
                 </div>
